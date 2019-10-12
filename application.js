@@ -29,7 +29,15 @@ fetch('https://www.googleapis.com/civicinfo/v2/voterinfo?address=' + address + '
             .then(function(response)
             { return response.json(); })
             .then(function(json) {
-              console.log(json);
+              var localCandidates = [];
+              for (var contest in json.contests) {
+                var role = json.contests[contest].office;
+                for (var k = 0; k < json.contests[contest].candidates.length; k++) {
+                    inOffice.push(json.officials[indices[k]]);
+                    inOffice[inOffice.length-1].position = json.offices[i].name;
+                    break;
+                }
+              }
 
           });
           /*
@@ -47,7 +55,7 @@ fetch('https://www.googleapis.com/civicinfo/v2/voterinfo?address=' + address + '
             var indices = json.offices[i].officialIndices;
             for (var k = 0; k < indices.length; k++) {
                 inOffice.push(json.officials[indices[k]]);
-                break;
+                inOffice[inOffice.length-1].position = json.offices[i].name;
             }
           }
           writeUserData(inOffice);
@@ -55,7 +63,12 @@ fetch('https://www.googleapis.com/civicinfo/v2/voterinfo?address=' + address + '
         });
 
 function writeUserData(data) {
-
+    /*for (i in data) {
+        var position = i.position;
+        firebase.database().ref("Political Database/National").set({
+            data
+        });
+    }*/
     firebase.database().ref().set({
         Representatives: data
     });
