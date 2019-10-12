@@ -50,28 +50,38 @@ fetch('https://www.googleapis.com/civicinfo/v2/voterinfo?address=' + address + '
           for (var i in json.offices) {
             var indices = json.offices[i].officialIndices;
             for (var k = 0; k < indices.length; k++) {
-                inOffice.push(json.officials[indices[k]]);
-                inOffice[inOffice.length-1].position = json.offices[i].name;
+                var position =  json.offices[i].name;
+                var newObj = {};
+                newObj[position] = json.officials[indices[k]];
+                inOffice.push(newObj);
             }
           }
           writeNationalStateData(inOffice);
 
         });
 
-function writeNationalStateData(data) {
+function writeNationalStateData(representatives) {
 
-    firebase.database().ref().set({
-        Representatives: data
-    });
+    for (var rep in representatives) {
+        var title = representatives[rep];
+        for (var k in title) {
+            var str = "Political Database/National/";
+            var newObj = {};
+            newObj[k] = title[k];
+            firebase.database().ref(str).set(newObj);
+        }
+    }
 }
 
 function writeLocalRepresentativeData(candidates) {
-    for (i in candidates) {
-        var position = constests[i].office;
+    for (var i in candidates) {
+        var position = candidates[i];
         console.log(position);
-        var str = "Political Database/Local/" + position;
-        var newObj = {};
-        newObj[position] = candidates[i];
-        firebase.database().ref(str).set(newObj);
+        for (var j in position) {
+            var str = "Political Database/Local/" + j;
+            var newObj = {};
+            newObj[j] = position[j];
+            firebase.database().ref(str).set(newObj);
+        }
     }
 }
