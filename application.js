@@ -17,16 +17,15 @@
 var counties = []
 var address = ["1101 3rd Street, West Lafayette, IN 47906"]
 
-//func callAPI(address){
-
-//for(var i = 0; i < address.length;i++){
-
-    //var county;
-
 fetch('https://www.googleapis.com/civicinfo/v2/voterinfo?address=' + address + '&key=AIzaSyB4ocz-4NHCGXM8cTfXsYRSVU6Wlz_3g4o')
             .then(function(response)
             { return response.json(); })
             .then(function(json) {
+                var pollingLocation = json.pollingLocations[0];
+                firebase.database().ref("Polling Information").set({
+                    address: pollingLocation.address,
+                    hours: pollingLocation.pollingHours
+                });
                 var localCandidates = [];
                 for (var contest in json.contests) {
                     var role = json.contests[contest].office;
@@ -36,11 +35,7 @@ fetch('https://www.googleapis.com/civicinfo/v2/voterinfo?address=' + address + '
                 }
                 writeLocalRepresentativeData(localCandidates);
           });
-          /*
-          county
-            JSONArray
-              office, name, social media, number, address
-          */
+
 
   fetch('https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyB4ocz-4NHCGXM8cTfXsYRSVU6Wlz_3g4o&address=' + address)
           .then(function(response)
@@ -97,8 +92,6 @@ function writeLocalRepresentativeData(candidates) {
         var position = candidates[i];
         for (var j in position) {
             var str = "Political Database/Local/" + j;
-            /*var newObj = {};
-            newObj[j] = position[j];*/
             firebase.database().ref(str).set(position[j]);
         }
     }
