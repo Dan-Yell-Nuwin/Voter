@@ -21,6 +21,26 @@ class StateViewController: UIViewController {
     @IBOutlet weak var indRedCandNm: UILabel!
     
     override func viewDidLoad() {
+        currIndGovImg.layer.cornerRadius = currIndGovImg.frame.width/14.0
+        currIndGovImg.clipsToBounds = true
+        indGovCandImg.layer.cornerRadius = indGovCandImg.frame.width/14.0
+        indGovCandImg.clipsToBounds = true
+        currIndRepImg.layer.cornerRadius = currIndRepImg.frame.width/14.0
+        currIndRepImg.clipsToBounds = true
+        indRedCandImg.layer.cornerRadius = indRedCandImg.frame.width/14.0
+        indRedCandImg.clipsToBounds = true
+        
+        Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("name").observeSingleEvent(of: .value) { (snapshot) in
+            guard let name = snapshot.value as? String else {return}
+            self.currIndGovNm.text = name
+        }
+        
+        Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("name").observeSingleEvent(of: .value) { (snapshot) in
+            guard let name = snapshot.value as? String else {return}
+            self.currIndGovNm.text = name
+        }
+        
+        
         super.viewDidLoad()
 
     }

@@ -18,14 +18,28 @@ class LocalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        curMayorImg.layer.cornerRadius = curMayorImg.frame.width/11.0
+        curMayorImg.layer.cornerRadius = curMayorImg.frame.width/14.0
         curMayorImg.clipsToBounds = true
+        canMayorImg.layer.cornerRadius = canMayorImg.frame.width/14.0
+        canMayorImg.clipsToBounds = true
         
         Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("1").child("name").observeSingleEvent(of: .value) { (snapshot) in
             guard let name = snapshot.value as? String else {return}
             self.curMayorNm.text = name
         }
         
+        Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("0").child("name").observeSingleEvent(of: .value) { (snapshot) in
+            guard let name = snapshot.value as? String else {return}
+            self.canMayorm.text = name
+        }
+        
     }
 
+    @IBAction func currentMayor(_ sender: Any) {
+        
+    }
+    
+    @IBAction func candidate(_ sender: Any) {
+        
+    }
 }
