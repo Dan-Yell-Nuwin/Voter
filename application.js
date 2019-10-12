@@ -22,23 +22,19 @@ var address = ["1101 3rd Street, West Lafayette, IN 47906"]
 //for(var i = 0; i < address.length;i++){
 
     //var county;
-    var city;
 
-/*
 fetch('https://www.googleapis.com/civicinfo/v2/voterinfo?address=' + address + '&key=AIzaSyB4ocz-4NHCGXM8cTfXsYRSVU6Wlz_3g4o')
             .then(function(response)
             { return response.json(); })
             .then(function(json) {
-              var localCandidates = [];
-              for (var contest in json.contests) {
-                var role = json.contests[contest].office;
-                for (var k = 0; k < json.contests[contest].candidates.length; k++) {
-                    inOffice.push(json.officials[indices[k]]);
-                    inOffice[inOffice.length-1].position = json.offices[i].name;
-                    break;
+                var localCandidates = [];
+                for (var contest in json.contests) {
+                    var role = json.contests[contest].office;
+                    var candidates = {}
+                    candidates[role] = json.contests[contest].candidates;
+                    localCandidates.push(candidates);
                 }
-              }
-
+                writeLocalRepresentativeData(localCandidates);
           });
           /*
           county
@@ -58,30 +54,24 @@ fetch('https://www.googleapis.com/civicinfo/v2/voterinfo?address=' + address + '
                 inOffice[inOffice.length-1].position = json.offices[i].name;
             }
           }
-          writeUserData(inOffice);
+          writeNationalStateData(inOffice);
 
         });
 
-function writeUserData(data) {
-    /*for (i in data) {
-        var position = i.position;
-        firebase.database().ref("Political Database/National").set({
-            data
-        });
-    }*/
+function writeNationalStateData(data) {
+
     firebase.database().ref().set({
         Representatives: data
     });
 }
-//}
 
-
-/*Add Params to Create Object to push
-  func createJSONObject() {
-    var newRef = reference.push();
-    newRef.set({
-              // set param to JSON object vals
-    })
-
-  }
-  */
+function writeLocalRepresentativeData(candidates) {
+    for (i in candidates) {
+        var position = constests[i].office;
+        console.log(position);
+        var str = "Political Database/Local/" + position;
+        var newObj = {};
+        newObj[position] = candidates[i];
+        firebase.database().ref(str).set(newObj);
+    }
+}
