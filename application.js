@@ -23,41 +23,36 @@ var address = ["1101 3rd Street, West Lafayette, IN 47906"]
 
     //var county;
     var city;
-    var office
 
+/*
 fetch('https://www.googleapis.com/civicinfo/v2/voterinfo?address=' + address + '&key=AIzaSyB4ocz-4NHCGXM8cTfXsYRSVU6Wlz_3g4o')
             .then(function(response)
             { return response.json(); })
             .then(function(json) {
               console.log(json);
-              //county = counties[i]
 
           });
           /*
           county
             JSONArray
-              office, name, social media, number, address, img
+              office, name, social media, number, address
           */
 
-  fetch('https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyB4ocz-4NHCGXM8cTfXsYRSVU6Wlz_3g4o&address=' + address +'&includeOffices=true')
+  fetch('https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyB4ocz-4NHCGXM8cTfXsYRSVU6Wlz_3g4o&address=' + address)
           .then(function(response)
           { return response.json(); })
           .then(function(json) {
-          console.log(json);
-/*
-        var arrOffice = json.office
-
-
-
-*/
-
-
-
-
-
-
-          });
-
+          var inOffice = [];
+          for (var i in json.offices) {
+            var indices = json.offices[i].officialIndices;
+            for (var k = 0; k < indices.length; k++) {
+                inOffice.push(json.officials[indices[k]]);
+                console.log("Appended");
+                break;
+            }
+          }
+          console.log(inOffice);
+        });
 
 /*
 //Change Collection type if needed
