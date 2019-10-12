@@ -179,9 +179,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oFW-CJ-zYC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="State" image="stateIcon" id="JNm-vu-qd2">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="State" image="stateIcon" id="JNm-vu-qd2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DkQ-tO-ikH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -225,7 +223,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="M4G-f9-nAm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="National" id="i5Z-Mc-nqv"/>
+                    <tabBarItem key="tabBarItem" title="National" image="natIcon" id="i5Z-Mc-nqv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PCg-Ud-0Gp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,6 +271,7 @@
         <image name="login1" width="1125" height="2436"/>
         <image name="logo" width="1083" height="810"/>
         <image name="natFeed" width="891" height="318"/>
+        <image name="natIcon" width="50" height="50"/>
         <image name="signup1" width="1125" height="2436"/>
         <image name="stateFeed" width="807" height="318"/>
         <image name="stateIcon" width="50" height="50"/>
@@ -281,4 +280,5 @@
         <segue reference="w6G-4k-Awu"/>
         <segue reference="mDw-ia-lJ0"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.11255148800000001" green="0.25568029279999999" blue="0.74906212090000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
