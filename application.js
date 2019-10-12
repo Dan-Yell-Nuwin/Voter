@@ -23,6 +23,7 @@ var address = ["1101 3rd Street, West Lafayette, IN 47906"]
 
     //var county;
     var city;
+    var office
 
 fetch('https://www.googleapis.com/civicinfo/v2/voterinfo?address=' + address + '&key=AIzaSyB4ocz-4NHCGXM8cTfXsYRSVU6Wlz_3g4o')
             .then(function(response)
@@ -35,17 +36,29 @@ fetch('https://www.googleapis.com/civicinfo/v2/voterinfo?address=' + address + '
           /*
           county
             JSONArray
-              office, name, social media, number, address
+              office, name, social media, number, address, img
           */
 
-  fetch('https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyB4ocz-4NHCGXM8cTfXsYRSVU6Wlz_3g4o&address=' + address +'&includeOffices=true&levels=country&levels=regional&levels=administrativeArea1&levels=locality')
+  fetch('https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyB4ocz-4NHCGXM8cTfXsYRSVU6Wlz_3g4o&address=' + address +'&includeOffices=true')
           .then(function(response)
           { return response.json(); })
           .then(function(json) {
           console.log(json);
+/*
+        var arrOffice = json.office
+
+
+
+*/
+
+
+
+
 
 
           });
+
+
 /*
 //Change Collection type if needed
   var reference = firebase.database().ref("usersCandiates");
