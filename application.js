@@ -65,10 +65,29 @@ function writeNationalStateData(representatives) {
     for (var rep in representatives) {
         var title = representatives[rep];
         for (var k in title) {
-            var str = "Political Database/National/";
-            var newObj = {};
-            newObj[k] = title[k];
-            firebase.database().ref(str).set(newObj);
+            var replaced = k.replace(/\./g, '');
+            var str;
+            if (k.includes('U.S.') || k.includes('United States') && !k.includes("Vice")) {
+                str = "Political Database/National/" + replaced;
+            }
+            else if (k.includes('IN') || k.includes('Indiana')) {
+                str = "Political Database/State/" + replaced;
+            }
+            else break;
+            try {
+                firebase.database().ref(str).set({
+                    name: title[k].name,
+                    party: title[k].party,
+                    channels: title[k].channels,
+                    url: title[k].urls[0],
+                    photo: title[k].photoUrl
+                });
+            } catch (err) {
+                firebase.database().ref(str).set({
+                    name: title[k].name,
+                    party: title[k].party
+                });
+            }
         }
     }
 }
@@ -76,12 +95,11 @@ function writeNationalStateData(representatives) {
 function writeLocalRepresentativeData(candidates) {
     for (var i in candidates) {
         var position = candidates[i];
-        console.log(position);
         for (var j in position) {
             var str = "Political Database/Local/" + j;
-            var newObj = {};
-            newObj[j] = position[j];
-            firebase.database().ref(str).set(newObj);
+            /*var newObj = {};
+            newObj[j] = position[j];*/
+            firebase.database().ref(str).set(position[j]);
         }
     }
 }
