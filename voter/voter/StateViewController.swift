@@ -35,9 +35,9 @@ class StateViewController: UIViewController {
             self.currIndGovNm.text = name
         }
         
-        Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("name").observeSingleEvent(of: .value) { (snapshot) in
+        Database.database().reference().child("Political Database").child("State").child("IN State Representative").child("name").observeSingleEvent(of: .value) { (snapshot) in
             guard let name = snapshot.value as? String else {return}
-            self.currIndGovNm.text = name
+            self.currIndRepNm.text = name
         }
         
         

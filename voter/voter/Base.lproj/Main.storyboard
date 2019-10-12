@@ -198,7 +198,7 @@
                                                 <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rPN-qb-O66">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="state 2" translatesAutoresizingMaskIntoConstraints="NO" id="rPN-qb-O66">
                                                 <rect key="frame" x="32" y="39" width="311" height="194"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -209,7 +209,7 @@
                                                 <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHB-Ls-xPz">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="state1" translatesAutoresizingMaskIntoConstraints="NO" id="YHB-Ls-xPz">
                                                 <rect key="frame" x="32" y="272" width="311" height="194"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -241,7 +241,7 @@
                                                 <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPQ-fu-EJB">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="state 3" translatesAutoresizingMaskIntoConstraints="NO" id="KPQ-fu-EJB">
                                                 <rect key="frame" x="32" y="527" width="311" height="194"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -259,7 +259,7 @@
                                                 <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bOM-eR-XLO">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="state 4" translatesAutoresizingMaskIntoConstraints="NO" id="bOM-eR-XLO">
                                                 <rect key="frame" x="32" y="760" width="311" height="194"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -774,6 +774,10 @@
         <image name="natFeed" width="891" height="318"/>
         <image name="natIcon" width="24" height="24"/>
         <image name="signup1" width="1125" height="2436"/>
+        <image name="state 2" width="4802" height="3206"/>
+        <image name="state 3" width="5933" height="2786"/>
+        <image name="state 4" width="5808" height="3225"/>
+        <image name="state1" width="4608" height="3456"/>
         <image name="stateFeed" width="807" height="318"/>
         <image name="stateIcon" width="24" height="24"/>
     </resources>
