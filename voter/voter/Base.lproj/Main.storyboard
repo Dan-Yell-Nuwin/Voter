@@ -271,10 +271,10 @@
         <image name="login1" width="1125" height="2436"/>
         <image name="logo" width="1083" height="810"/>
         <image name="natFeed" width="891" height="318"/>
-        <image name="natIcon" width="50" height="50"/>
+        <image name="natIcon" width="24" height="24"/>
         <image name="signup1" width="1125" height="2436"/>
         <image name="stateFeed" width="807" height="318"/>
-        <image name="stateIcon" width="50" height="50"/>
+        <image name="stateIcon" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="w6G-4k-Awu"/>
