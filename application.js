@@ -47,25 +47,27 @@ fetch('https://www.googleapis.com/civicinfo/v2/voterinfo?address=' + address + '
             var indices = json.offices[i].officialIndices;
             for (var k = 0; k < indices.length; k++) {
                 inOffice.push(json.officials[indices[k]]);
-                console.log("Appended");
                 break;
             }
           }
-          console.log(inOffice);
+          writeUserData(inOffice);
+
         });
 
-/*
-//Change Collection type if needed
-  var reference = firebase.database().ref("usersCandiates");
+function writeUserData(data) {
 
+    firebase.database().ref().set({
+        Representatives: data
+    });
+}
 //}
 
 
-//Add Params to Create Object to push
+/*Add Params to Create Object to push
   func createJSONObject() {
     var newRef = reference.push();
     newRef.set({
-      // set param to JSON object vals
+              // set param to JSON object vals
     })
 
   }
