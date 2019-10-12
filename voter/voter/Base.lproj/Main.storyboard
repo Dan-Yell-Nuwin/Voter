@@ -179,7 +179,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oFW-CJ-zYC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="State" id="JNm-vu-qd2"/>
+                    <tabBarItem key="tabBarItem" title="State" image="stateIcon" id="JNm-vu-qd2">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DkQ-tO-ikH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -205,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOk-HY-POb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4009" y="-254"/>
+            <point key="canvasLocation" x="4008.8000000000002" y="-254.18719211822662"/>
         </scene>
         <!--National-->
         <scene sceneID="i0V-0V-hOr">
@@ -228,6 +230,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PCg-Ud-0Gp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4742" y="52"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iaB-DV-rf5">
+            <objects>
+                <viewController id="omQ-nE-PpW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RMq-YP-EFm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dyg-Y9-mOO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Pe-93-Roi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5942" y="52"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Qry-lu-xQS">
@@ -258,6 +275,7 @@
         <image name="natFeed" width="891" height="318"/>
         <image name="signup1" width="1125" height="2436"/>
         <image name="stateFeed" width="807" height="318"/>
+        <image name="stateIcon" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="w6G-4k-Awu"/>
