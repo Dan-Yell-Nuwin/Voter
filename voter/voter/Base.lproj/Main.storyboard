@@ -163,7 +163,7 @@
             </objects>
             <point key="canvasLocation" x="412" y="72"/>
         </scene>
-        <!--Item 2-->
+        <!--State-->
         <scene sceneID="hvF-G3-asY">
             <objects>
                 <viewController id="Ehn-gG-y9s" sceneMemberID="viewController">
@@ -171,24 +171,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5T-nd-ngy">
-                                <rect key="frame" x="118" y="227" width="83" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stateFeed" translatesAutoresizingMaskIntoConstraints="NO" id="Jm1-th-FMY">
+                                <rect key="frame" x="29" y="74" width="298" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oFW-CJ-zYC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="JNm-vu-qd2"/>
+                    <tabBarItem key="tabBarItem" title="State" id="JNm-vu-qd2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DkQ-tO-ikH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4009" y="398"/>
         </scene>
-        <!--Item 1-->
+        <!--Local-->
         <scene sceneID="Jmt-sT-otT">
             <objects>
                 <viewController id="M9K-Yg-Dpk" sceneMemberID="viewController">
@@ -196,24 +193,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Local Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfs-Is-bHf">
-                                <rect key="frame" x="166" y="396" width="83" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="localFeed" translatesAutoresizingMaskIntoConstraints="NO" id="Zc8-fi-G9M">
+                                <rect key="frame" x="29" y="74" width="298" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="e0I-zt-FBU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Whr-6X-H11"/>
+                    <tabBarItem key="tabBarItem" title="Local" image="Icon-Map-Pin" id="Whr-6X-H11"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOk-HY-POb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4009" y="-254"/>
         </scene>
-        <!--Item-->
+        <!--National-->
         <scene sceneID="i0V-0V-hOr">
             <objects>
                 <viewController id="YEi-Ft-abX" sceneMemberID="viewController">
@@ -221,18 +215,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="National Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nen-Jg-yTW">
-                                <rect key="frame" x="166" y="396" width="106" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="natFeed" translatesAutoresizingMaskIntoConstraints="NO" id="p4o-oa-mYV">
+                                <rect key="frame" x="29" y="74" width="298" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="M4G-f9-nAm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="i5Z-Mc-nqv"/>
+                    <tabBarItem key="tabBarItem" title="National" id="i5Z-Mc-nqv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PCg-Ud-0Gp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -258,35 +249,15 @@
             </objects>
             <point key="canvasLocation" x="2286" y="72"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="tHJ-ri-Rkf">
-            <objects>
-                <viewController id="HA2-EE-YOt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="31x-Ln-ejp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="National Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Nb-RO-qFj">
-                                <rect key="frame" x="146" y="396" width="106" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="eZQ-RZ-VKJ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IPF-VR-A7H" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2241" y="1473"/>
-        </scene>
     </scenes>
     <resources>
+        <image name="Icon-Map-Pin" width="24" height="24"/>
+        <image name="localFeed" width="798" height="318"/>
         <image name="login1" width="1125" height="2436"/>
         <image name="logo" width="1083" height="810"/>
+        <image name="natFeed" width="891" height="318"/>
         <image name="signup1" width="1125" height="2436"/>
+        <image name="stateFeed" width="807" height="318"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="w6G-4k-Awu"/>
