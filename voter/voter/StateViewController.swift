@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 
+var sendData: String?
+
 class StateViewController: UIViewController {
 
     @IBOutlet weak var currIndGovImg: UIImageView!
@@ -45,19 +47,31 @@ class StateViewController: UIViewController {
 
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "stateToProfile" {
+            if let destinationVC = segue.destination as? ProfileViewController {
+                destinationVC.recivedData = sendData
+            }
+        }
+    }
+    
     @IBAction func currIndGov(_ sender: Any) {
-        
+        sendData = "Eric Holcomb"
+        self.performSegue(withIdentifier: "stateToProfile", sender: self)
     }
     
     @IBAction func indGovCand(_ sender: Any) {
-        
+        sendData = "Eric Holcomb"
+        self.performSegue(withIdentifier: "stateToProfile", sender: self)
     }
     
     @IBAction func curIndRep(_ sender: Any) {
-        
+        sendData = "Chris Campbell"
+        self.performSegue(withIdentifier: "stateToProfile", sender: self)
     }
     
     @IBAction func indRepCand(_ sender: Any) {
-        
+        sendData = "Chris Campbell"
+        self.performSegue(withIdentifier: "stateToProfile", sender: self)
     }
 }
