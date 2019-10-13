@@ -441,7 +441,7 @@
                                                 <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mhn-lo-lDb">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteHouse" translatesAutoresizingMaskIntoConstraints="NO" id="mhn-lo-lDb">
                                                 <rect key="frame" x="32" y="39" width="311" height="194"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -452,7 +452,7 @@
                                                 <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gQK-JX-Otq">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dc" translatesAutoresizingMaskIntoConstraints="NO" id="gQK-JX-Otq">
                                                 <rect key="frame" x="32" y="272" width="311" height="194"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -477,7 +477,7 @@
                                                 <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GRj-H4-jQw">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dc2" translatesAutoresizingMaskIntoConstraints="NO" id="GRj-H4-jQw">
                                                 <rect key="frame" x="32" y="522" width="311" height="194"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -488,7 +488,7 @@
                                                 <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pwj-ph-d2n">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dc3" translatesAutoresizingMaskIntoConstraints="NO" id="pwj-ph-d2n">
                                                 <rect key="frame" x="32" y="755" width="311" height="194"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -520,7 +520,7 @@
                                                 <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wb8-TC-EPy">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rep1" translatesAutoresizingMaskIntoConstraints="NO" id="Wb8-TC-EPy">
                                                 <rect key="frame" x="32" y="1004" width="311" height="194"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -538,7 +538,7 @@
                                                 <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wma-4M-cec">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rep2" translatesAutoresizingMaskIntoConstraints="NO" id="Wma-4M-cec">
                                                 <rect key="frame" x="32" y="1237" width="311" height="194"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -627,16 +627,17 @@
                         <outlet property="indSenCandNm" destination="1aL-ch-Izk" id="njZ-aq-RBh"/>
                         <outlet property="presCandImg" destination="gQK-JX-Otq" id="V8a-eo-8Zh"/>
                         <outlet property="presCandNm" destination="No1-vh-0Zg" id="oVg-82-LdB"/>
+                        <segue destination="omQ-nE-PpW" kind="show" identifier="natToProfile" id="vfi-dX-b5G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PCg-Ud-0Gp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4829.6000000000004" y="71.674876847290648"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="iaB-DV-rf5">
             <objects>
-                <viewController id="omQ-nE-PpW" sceneMemberID="viewController">
+                <viewController id="omQ-nE-PpW" customClass="ProfileViewController" customModule="voter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RMq-YP-EFm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -735,6 +736,11 @@
                         <viewLayoutGuide key="safeArea" id="dyg-Y9-mOO"/>
                     </view>
                     <size key="freeformSize" width="375" height="1200"/>
+                    <connections>
+                        <outlet property="headerImage" destination="h4P-3d-dju" id="dZW-TR-fyn"/>
+                        <outlet property="nameLabel" destination="Tox-xL-1Lp" id="r8k-HW-owe"/>
+                        <outlet property="positionLabel" destination="Pqo-UG-W7V" id="tMm-6j-IEO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Pe-93-Roi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -765,6 +771,9 @@
     <resources>
         <image name="Feed-Background" width="1125" height="1440"/>
         <image name="Icon-Map-Pin" width="24" height="24"/>
+        <image name="dc" width="5168" height="3448"/>
+        <image name="dc2" width="4145" height="2753"/>
+        <image name="dc3" width="3091" height="2048"/>
         <image name="go_countycourthouse" width="396" height="271"/>
         <image name="icon-arrow-left" width="16" height="12"/>
         <image name="larry-tseng-RT4xKOKYDas-unsplash" width="4000" height="3000"/>
@@ -773,6 +782,8 @@
         <image name="logo" width="1083" height="810"/>
         <image name="natFeed" width="891" height="318"/>
         <image name="natIcon" width="24" height="24"/>
+        <image name="rep1" width="5719" height="2930"/>
+        <image name="rep2" width="5760" height="3840"/>
         <image name="signup1" width="1125" height="2436"/>
         <image name="state 2" width="4802" height="3206"/>
         <image name="state 3" width="5933" height="2786"/>
@@ -780,6 +791,7 @@
         <image name="state1" width="4608" height="3456"/>
         <image name="stateFeed" width="807" height="318"/>
         <image name="stateIcon" width="24" height="24"/>
+        <image name="whiteHouse" width="4928" height="3209"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="w6G-4k-Awu"/>
