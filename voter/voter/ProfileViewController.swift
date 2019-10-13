@@ -28,9 +28,34 @@ class ProfileViewController: UIViewController {
                 
             }
         }else if(recivedData == "Senator Todd Young"){
-            
+            Database.database().reference().child("Political Database").child("National").child("US Senator").child("name").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.nameLabel.text = name
+                self.positionLabel.text = "US Senator Indiana"
+
+            }
         }else if (recivedData == "Representative James R. Baird"){
+            Database.database().reference().child("Political Database").child("National").child("US Representative").child("name").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.nameLabel.text = name
+                self.positionLabel.text = "US Representative Indiana"
+                
+            }
             
+        }else if(recivedData == "John R Dennis"){
+            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("1").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.nameLabel.text = name
+                self.positionLabel.text = "Mayor of West Lafayette"
+                
+            }
+        }else if(recivedData == "Zachary Baiel"){
+            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("0").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.nameLabel.text = name
+                self.positionLabel.text = "Candidate for Mayor of West Lafayette"
+                
+            }
         }
     }
     

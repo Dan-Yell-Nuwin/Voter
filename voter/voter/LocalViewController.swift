@@ -11,6 +11,8 @@ import Firebase
 
 class LocalViewController: UIViewController {
 
+    var sendData: String?
+    
     @IBOutlet weak var curMayorImg: UIImageView!
     @IBOutlet weak var curMayorNm: UILabel!
     @IBOutlet weak var canMayorImg: UIImageView!
@@ -34,12 +36,23 @@ class LocalViewController: UIViewController {
         }
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "localToProfile" {
+            if let destinationVC = segue.destination as? ProfileViewController {
+                destinationVC.recivedData = sendData
+            }
+        }
+    }
+    
 
     @IBAction func currentMayor(_ sender: Any) {
-        
+        sendData = "John R Dennis"
+        self.performSegue(withIdentifier: "localToProfile", sender: self)
     }
     
     @IBAction func candidate(_ sender: Any) {
-        
+        sendData = "Zachary Baiel"
+        self.performSegue(withIdentifier: "localToProfile", sender: self)
     }
 }

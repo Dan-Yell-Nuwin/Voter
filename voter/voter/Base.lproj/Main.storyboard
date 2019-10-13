@@ -195,7 +195,7 @@
                                                 <rect key="frame" x="32" y="8" width="207" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                                <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.1111473367" green="0.28011122350000001" blue="0.92946511509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="state 2" translatesAutoresizingMaskIntoConstraints="NO" id="rPN-qb-O66">
@@ -206,7 +206,7 @@
                                                 <rect key="frame" x="32" y="241" width="231" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                                <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.1111473367" green="0.28011122350000001" blue="0.92946511509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="state1" translatesAutoresizingMaskIntoConstraints="NO" id="YHB-Ls-xPz">
@@ -238,7 +238,7 @@
                                                 <rect key="frame" x="32" y="496" width="253" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                                <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.1111473367" green="0.28011122350000001" blue="0.92946511509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="state 3" translatesAutoresizingMaskIntoConstraints="NO" id="KPQ-fu-EJB">
@@ -256,7 +256,7 @@
                                                 <rect key="frame" x="32" y="729" width="277" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                                <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.1111473367" green="0.28011122350000001" blue="0.92946511509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="state 4" translatesAutoresizingMaskIntoConstraints="NO" id="bOM-eR-XLO">
@@ -352,14 +352,14 @@
                                 <rect key="frame" x="32" y="219" width="260" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.1111473367" green="0.28011122350000001" blue="0.92946511509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mayor of West Lafayette Candidate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6O-AW-VJQ">
                                 <rect key="frame" x="32" y="452" width="284" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.1111473367" green="0.28011122350000001" blue="0.92946511509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGG-cu-2ag">
@@ -408,6 +408,7 @@
                         <outlet property="canMayorm" destination="9q4-mM-5Bx" id="SiA-BJ-MS8"/>
                         <outlet property="curMayorImg" destination="CXY-Qa-vbZ" id="koG-qa-7dX"/>
                         <outlet property="curMayorNm" destination="J7f-sC-xrd" id="ag6-sq-k3W"/>
+                        <segue destination="omQ-nE-PpW" kind="show" identifier="localToProfile" id="bq6-Th-kNi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOk-HY-POb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -438,7 +439,7 @@
                                                 <rect key="frame" x="32" y="8" width="165" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                                <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.1111473367" green="0.28011122350000001" blue="0.92946511509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteHouse" translatesAutoresizingMaskIntoConstraints="NO" id="mhn-lo-lDb">
@@ -449,7 +450,7 @@
                                                 <rect key="frame" x="32" y="241" width="189" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                                <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.1111473367" green="0.28011122350000001" blue="0.92946511509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dc" translatesAutoresizingMaskIntoConstraints="NO" id="gQK-JX-Otq">
@@ -474,7 +475,7 @@
                                                 <rect key="frame" x="32" y="491" width="194" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                                <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.1111473367" green="0.28011122350000001" blue="0.92946511509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dc2" translatesAutoresizingMaskIntoConstraints="NO" id="GRj-H4-jQw">
@@ -485,7 +486,7 @@
                                                 <rect key="frame" x="32" y="724" width="212" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                                <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.1111473367" green="0.28011122350000001" blue="0.92946511509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dc3" translatesAutoresizingMaskIntoConstraints="NO" id="pwj-ph-d2n">
@@ -517,7 +518,7 @@
                                                 <rect key="frame" x="32" y="973" width="253" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                                <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.1111473367" green="0.28011122350000001" blue="0.92946511509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rep1" translatesAutoresizingMaskIntoConstraints="NO" id="Wb8-TC-EPy">
@@ -535,7 +536,7 @@
                                                 <rect key="frame" x="32" y="1206" width="277" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                                <color key="textColor" red="0.84416073560000005" green="0.18610176440000001" blue="0.1528838277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" red="0.1111473367" green="0.28011122350000001" blue="0.92946511509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rep2" translatesAutoresizingMaskIntoConstraints="NO" id="Wma-4M-cec">
@@ -800,6 +801,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Gor-Sq-W5o"/>
+        <segue reference="bq6-Th-kNi"/>
         <segue reference="nel-Gi-9dN"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.097473897039999993" green="0.23821163179999999" blue="0.74514085050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
