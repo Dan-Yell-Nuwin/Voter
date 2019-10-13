@@ -106,12 +106,44 @@ class ProfileViewController: UIViewController {
             }
             
         }else if (recivedData == "Eric Holcomb"){
-            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("name").observeSingleEvent(of: .value) { (snapshot) in
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("0").child("name").observeSingleEvent(of: .value) { (snapshot) in
                 guard let name = snapshot.value as? String else {return}
                 self.nameLabel.text = name
                 self.positionLabel.text = "Governor of Indiana"
                 
             }
+            
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("0").child("photo").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.headerImage.kf.setImage(with: url)
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("0").child("bio").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.bioText.text = name
+            }
+            
+        }else if (recivedData == "Eddie Melton"){
+            
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("1").child("name").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.nameLabel.text = name
+                self.positionLabel.text = "Governor of Indiana Candidate"
+                
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("1").child("photo").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.headerImage.kf.setImage(with: url)
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("1").child("bio").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.bioText.text = name
+            }
+            
         }else if (recivedData == "Chris Campbell"){
             Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("name").observeSingleEvent(of: .value) { (snapshot) in
                 guard let name = snapshot.value as? String else {return}
@@ -130,15 +162,20 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func facebookTapped(_ sender: Any) {
+        if (recivedData == "John R Dennis"){
+
+        }
+    }
+    
+    @IBAction func twitterTapped(_ sender: Any) {
         if(recivedData == "Zachary Baiel"){
-            
-        } else if (recivedData == "John R Dennis"){
+            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("0").child("channels").child("0").child("id").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                guard let url = URL(string: "https://twitter.com/\(name)") else { return }
+                UIApplication.shared.open(url)
+            }
             
         }
     }
-    @IBAction func twitterTapped(_ sender: Any) {
-        
-    }
-    
     
 }

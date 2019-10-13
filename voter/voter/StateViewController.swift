@@ -19,7 +19,6 @@ class StateViewController: UIViewController {
     @IBOutlet weak var indGovCandNm: UILabel!
     @IBOutlet weak var currIndRepImg: UIImageView!
     @IBOutlet weak var currIndRepNm: UILabel!
-    @IBOutlet weak var indRedCandImg: UIImageView!
     @IBOutlet weak var indRedCandNm: UILabel!
     
     override func viewDidLoad() {
@@ -29,13 +28,17 @@ class StateViewController: UIViewController {
         indGovCandImg.clipsToBounds = true
         currIndRepImg.layer.cornerRadius = currIndRepImg.frame.width/14.0
         currIndRepImg.clipsToBounds = true
-        indRedCandImg.layer.cornerRadius = indRedCandImg.frame.width/14.0
-        indRedCandImg.clipsToBounds = true
-        
-        Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("name").observeSingleEvent(of: .value) { (snapshot) in
+
+        Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("0").child("name").observeSingleEvent(of: .value) { (snapshot) in
             guard let name = snapshot.value as? String else {return}
             self.currIndGovNm.text = name
         }
+        
+        Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("1").child("name").observeSingleEvent(of: .value) { (snapshot) in
+            guard let name = snapshot.value as? String else {return}
+            self.indGovCandNm.text = name
+        }
+        
         
         Database.database().reference().child("Political Database").child("State").child("IN State Representative").child("name").observeSingleEvent(of: .value) { (snapshot) in
             guard let name = snapshot.value as? String else {return}
@@ -61,7 +64,7 @@ class StateViewController: UIViewController {
     }
     
     @IBAction func indGovCand(_ sender: Any) {
-        sendData = "Eric Holcomb"
+        sendData = "Eddie Melton"
         self.performSegue(withIdentifier: "stateToProfile", sender: self)
     }
     
@@ -70,8 +73,4 @@ class StateViewController: UIViewController {
         self.performSegue(withIdentifier: "stateToProfile", sender: self)
     }
     
-    @IBAction func indRepCand(_ sender: Any) {
-        sendData = "Chris Campbell"
-        self.performSegue(withIdentifier: "stateToProfile", sender: self)
-    }
 }
