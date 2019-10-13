@@ -644,8 +644,11 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1L-yE-InI">
                                 <rect key="frame" x="27" y="67" width="30" height="30"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="omQ-nE-PpW" eventType="touchUpInside" id="gFb-YH-ebk"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h4P-3d-dju">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PE Color" translatesAutoresizingMaskIntoConstraints="NO" id="h4P-3d-dju">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -740,11 +743,12 @@
                         <outlet property="headerImage" destination="h4P-3d-dju" id="dZW-TR-fyn"/>
                         <outlet property="nameLabel" destination="Tox-xL-1Lp" id="r8k-HW-owe"/>
                         <outlet property="positionLabel" destination="Pqo-UG-W7V" id="tMm-6j-IEO"/>
+                        <segue destination="QV2-39-KqV" kind="show" identifier="profileToHome" id="Gor-Sq-W5o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Pe-93-Roi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5861.6000000000004" y="71.674876847290648"/>
+            <point key="canvasLocation" x="5890" y="-28"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Qry-lu-xQS">
@@ -771,6 +775,7 @@
     <resources>
         <image name="Feed-Background" width="1125" height="1440"/>
         <image name="Icon-Map-Pin" width="24" height="24"/>
+        <image name="PE Color" width="4032" height="5040"/>
         <image name="dc" width="5168" height="3448"/>
         <image name="dc2" width="4145" height="2753"/>
         <image name="dc3" width="3091" height="2048"/>
@@ -794,7 +799,7 @@
         <image name="whiteHouse" width="4928" height="3209"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="w6G-4k-Awu"/>
+        <segue reference="Gor-Sq-W5o"/>
         <segue reference="nel-Gi-9dN"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.097473897039999993" green="0.23821163179999999" blue="0.74514085050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

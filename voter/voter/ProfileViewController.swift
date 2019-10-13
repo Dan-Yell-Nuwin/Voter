@@ -34,6 +34,14 @@ class ProfileViewController: UIViewController {
         }
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "profileToHome", sender: nil)
+    }
+    
     
     
 }
