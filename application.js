@@ -17,16 +17,15 @@
 var counties = []
 var address = ["1101 3rd Street, West Lafayette, IN 47906"]
 
-//func callAPI(address){
-
-//for(var i = 0; i < address.length;i++){
-
-    //var county;
-
 fetch('https://www.googleapis.com/civicinfo/v2/voterinfo?address=' + address + '&key=AIzaSyB4ocz-4NHCGXM8cTfXsYRSVU6Wlz_3g4o')
             .then(function(response)
             { return response.json(); })
             .then(function(json) {
+                var pollingLocation = json.pollingLocations[0];
+                firebase.database().ref("Polling Information").set({
+                    address: pollingLocation.address,
+                    hours: pollingLocation.pollingHours
+                });
                 var localCandidates = [];
                 for (var contest in json.contests) {
                     var role = json.contests[contest].office;
@@ -36,11 +35,7 @@ fetch('https://www.googleapis.com/civicinfo/v2/voterinfo?address=' + address + '
                 }
                 writeLocalRepresentativeData(localCandidates);
           });
-          /*
-          county
-            JSONArray
-              office, name, social media, number, address
-          */
+
 
   fetch('https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyB4ocz-4NHCGXM8cTfXsYRSVU6Wlz_3g4o&address=' + address)
           .then(function(response)
@@ -65,10 +60,29 @@ function writeNationalStateData(representatives) {
     for (var rep in representatives) {
         var title = representatives[rep];
         for (var k in title) {
-            var str = "Political Database/National/";
-            var newObj = {};
-            newObj[k] = title[k];
-            firebase.database().ref(str).set(newObj);
+            var replaced = k.replace(/\./g, '');
+            var str;
+            if (k.includes('U.S.') || k.includes('United States') && !k.includes("Vice")) {
+                str = "Political Database/National/" + replaced;
+            }
+            else if (k.includes('IN') || k.includes('Indiana')) {
+                str = "Political Database/State/" + replaced;
+            }
+            else break;
+            try {
+                firebase.database().ref(str).set({
+                    name: title[k].name,
+                    party: title[k].party,
+                    channels: title[k].channels,
+                    url: title[k].urls[0],
+                    photo: title[k].photoUrl
+                });
+            } catch (err) {
+                firebase.database().ref(str).set({
+                    name: title[k].name,
+                    party: title[k].party
+                });
+            }
         }
     }
 }
@@ -76,12 +90,9 @@ function writeNationalStateData(representatives) {
 function writeLocalRepresentativeData(candidates) {
     for (var i in candidates) {
         var position = candidates[i];
-        console.log(position);
         for (var j in position) {
             var str = "Political Database/Local/" + j;
-            var newObj = {};
-            newObj[j] = position[j];
-            firebase.database().ref(str).set(newObj);
+            firebase.database().ref(str).set(position[j]);
         }
     }
 }
