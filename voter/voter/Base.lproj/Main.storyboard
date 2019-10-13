@@ -321,7 +321,7 @@
         <!--Vote-->
         <scene sceneID="yl9-20-IW4">
             <objects>
-                <viewController id="u4N-Cj-wio" sceneMemberID="viewController">
+                <viewController id="u4N-Cj-wio" customClass="getDirections" customModule="voter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xzH-jT-dbf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,18 +334,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Buttons" translatesAutoresizingMaskIntoConstraints="NO" id="Wah-GL-kiv">
-                                <rect key="frame" x="32" y="557" width="311" height="133"/>
+                                <rect key="frame" x="29" y="448" width="311" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1a-SM-9WQ">
-                                <rect key="frame" x="29" y="557" width="314" height="133"/>
+                                <rect key="frame" x="30" y="448" width="314" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="zJv-o8-hxG" kind="show" id="s7I-ta-JTk"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="zKe-na-acG">
-                                <rect key="frame" x="67" y="333" width="240" height="146"/>
+                                <rect key="frame" x="67" y="260" width="240" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7W-KB-drL">
+                                <rect key="frame" x="30" y="599" width="314" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="getDirections:" destination="u4N-Cj-wio" eventType="touchUpInside" id="a5g-tq-1nk"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Buttons-closestpolling" translatesAutoresizingMaskIntoConstraints="NO" id="uOw-bk-Jx4">
+                                <rect key="frame" x="30" y="543" width="314" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -356,7 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtP-E5-dNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5471" y="1158"/>
+            <point key="canvasLocation" x="5469.6000000000004" y="1157.1428571428571"/>
         </scene>
         <!--Local-->
         <scene sceneID="Jmt-sT-otT">
@@ -908,6 +919,7 @@
     <resources>
         <image name="Button-Signup" width="933" height="168"/>
         <image name="Buttons" width="933" height="399"/>
+        <image name="Buttons-closestpolling" width="933" height="168"/>
         <image name="Feed-Background" width="1125" height="1440"/>
         <image name="Icon-Download" width="24" height="24"/>
         <image name="Icon-Map-Pin" width="24" height="24"/>
