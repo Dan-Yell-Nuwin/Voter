@@ -16,6 +16,9 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var headerImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var positionLabel: UILabel!
+    @IBOutlet weak var facebookButton: UIButton!
+    @IBOutlet weak var twitterButton: UIButton!
+    @IBOutlet weak var bioText: UILabel!
     
     var recivedData: String?
     
@@ -64,19 +67,44 @@ class ProfileViewController: UIViewController {
             }
             
         }else if(recivedData == "John R Dennis"){
-            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("1").observeSingleEvent(of: .value) { (snapshot) in
+            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("1").child("name").observeSingleEvent(of: .value) { (snapshot) in
                 guard let name = snapshot.value as? String else {return}
                 self.nameLabel.text = name
                 self.positionLabel.text = "Mayor of West Lafayette"
                 
+                Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("1").child("bio").observeSingleEvent(of: .value) { (snapshot) in
+                    guard let name = snapshot.value as? String else {return}
+                    self.bioText.text = name
+                }
+
+                
+                Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("1").child("photo").observeSingleEvent(of: .value) { (snapshot) in
+                    guard let photoUrl = snapshot.value as? String else {return}
+                    let url = URL(string: photoUrl)
+                    self.headerImage.kf.setImage(with: url)
+                }
+                
+                
             }
         }else if(recivedData == "Zachary Baiel"){
-            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("0").observeSingleEvent(of: .value) { (snapshot) in
+            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("0").child("name").observeSingleEvent(of: .value) { (snapshot) in
                 guard let name = snapshot.value as? String else {return}
                 self.nameLabel.text = name
                 self.positionLabel.text = "Candidate for Mayor of West Lafayette"
                 
             }
+            
+            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("0").child("bio").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.bioText.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("0").child("photo").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.headerImage.kf.setImage(with: url)
+            }
+            
         }else if (recivedData == "Eric Holcomb"){
             Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("name").observeSingleEvent(of: .value) { (snapshot) in
                 guard let name = snapshot.value as? String else {return}
@@ -101,6 +129,16 @@ class ProfileViewController: UIViewController {
         self.performSegue(withIdentifier: "profileToHome", sender: nil)
     }
     
+    @IBAction func facebookTapped(_ sender: Any) {
+        if(recivedData == "Zachary Baiel"){
+            
+        } else if (recivedData == "John R Dennis"){
+            
+        }
+    }
+    @IBAction func twitterTapped(_ sender: Any) {
+        
+    }
     
     
 }

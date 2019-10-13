@@ -689,20 +689,46 @@
                                                 <rect key="frame" x="0.0" y="386" width="375" height="482"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjO-mH-r99">
-                                                <rect key="frame" x="166" y="107" width="42" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnp-fS-gV5">
+                                                <rect key="frame" x="22" y="91" width="106" height="28"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
+                                                <color key="textColor" red="0.10980392156862745" green="0.27843137254901962" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biography" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2m3-Ky-o0X">
+                                                <rect key="frame" x="22" y="127" width="331" height="264"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnp-fS-gV5">
-                                                <rect key="frame" x="166" y="642" width="42" height="21"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="Sdd-AN-gUq">
+                                                <rect key="frame" x="100" y="25" width="68" height="58"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="wbD-TX-qgR">
+                                                <rect key="frame" x="207" y="25" width="68" height="58"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIo-bl-pPq">
+                                                <rect key="frame" x="100" y="25" width="68" height="58"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="facebookTapped:" destination="omQ-nE-PpW" eventType="touchUpInside" id="zbI-pl-ljy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uq9-B9-KOq">
+                                                <rect key="frame" x="207" y="25" width="68" height="58"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="twitterTapped:" destination="omQ-nE-PpW" eventType="touchUpInside" id="qpT-dX-Ycd"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qcT-sU-Kk7">
+                                                <rect key="frame" x="67" y="399" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -742,15 +768,18 @@
                     </view>
                     <size key="freeformSize" width="375" height="1200"/>
                     <connections>
+                        <outlet property="bioText" destination="2m3-Ky-o0X" id="sod-I6-uqD"/>
+                        <outlet property="facebookButton" destination="UIo-bl-pPq" id="XKS-Oc-RkI"/>
                         <outlet property="headerImage" destination="h4P-3d-dju" id="dZW-TR-fyn"/>
                         <outlet property="nameLabel" destination="Tox-xL-1Lp" id="r8k-HW-owe"/>
                         <outlet property="positionLabel" destination="Pqo-UG-W7V" id="tMm-6j-IEO"/>
+                        <outlet property="twitterButton" destination="uq9-B9-KOq" id="MYV-vw-o8m"/>
                         <segue destination="QV2-39-KqV" kind="show" identifier="profileToHome" id="Gor-Sq-W5o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Pe-93-Roi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5890" y="-28"/>
+            <point key="canvasLocation" x="5888.8000000000002" y="-28.078817733990149"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Qry-lu-xQS">
@@ -780,6 +809,7 @@
         <image name="dc" width="5168" height="3448"/>
         <image name="dc2" width="4145" height="2753"/>
         <image name="dc3" width="3091" height="2048"/>
+        <image name="facebook" width="100" height="100"/>
         <image name="go_countycourthouse" width="396" height="271"/>
         <image name="icon-arrow-left" width="16" height="12"/>
         <image name="larry-tseng-RT4xKOKYDas-unsplash" width="4000" height="3000"/>
@@ -797,6 +827,7 @@
         <image name="state1" width="4608" height="3456"/>
         <image name="stateFeed" width="807" height="318"/>
         <image name="stateIcon" width="24" height="24"/>
+        <image name="twitter" width="100" height="100"/>
         <image name="whiteHouse" width="4928" height="3209"/>
     </resources>
     <inferredMetricsTieBreakers>
