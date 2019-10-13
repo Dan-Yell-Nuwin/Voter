@@ -176,7 +176,7 @@
             <objects>
                 <viewController id="Ehn-gG-y9s" customClass="StateViewController" customModule="voter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I3u-os-Lus">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stateFeed" translatesAutoresizingMaskIntoConstraints="NO" id="Jm1-th-FMY">
@@ -186,10 +186,10 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQq-VI-gVD">
-                                <rect key="frame" x="0.0" y="196" width="375" height="921"/>
+                                <rect key="frame" x="0.0" y="196" width="375" height="721"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGX-Rx-ZwW">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Indiana Governor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pj-wH-Byy">
                                                 <rect key="frame" x="32" y="8" width="207" height="23"/>
@@ -276,7 +276,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="V4B-H7-jjP"/>
+                                            <constraint firstAttribute="height" constant="750" id="V4B-H7-jjP"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -302,7 +302,7 @@
                         <viewLayoutGuide key="safeArea" id="oFW-CJ-zYC"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="State" image="stateIcon" id="JNm-vu-qd2"/>
-                    <size key="freeformSize" width="375" height="1200"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="currIndGovImg" destination="rPN-qb-O66" id="Xan-tN-yUC"/>
                         <outlet property="currIndGovNm" destination="K5u-Rr-vlF" id="DsN-Ma-PJV"/>
@@ -402,7 +402,7 @@
             <objects>
                 <viewController id="YEi-Ft-abX" customClass="NationalViewController" customModule="voter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Dh-4Z-CkC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1700"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="natFeed" translatesAutoresizingMaskIntoConstraints="NO" id="p4o-oa-mYV">
@@ -412,10 +412,10 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feb-2y-f0S">
-                                <rect key="frame" x="0.0" y="196" width="375" height="1421"/>
+                                <rect key="frame" x="0.0" y="196" width="375" height="1221"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szE-i1-Wqm">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current US President" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANa-BZ-ypj">
                                                 <rect key="frame" x="32" y="8" width="165" height="23"/>
@@ -514,17 +514,6 @@
                                                     <action selector="currIndRep:" destination="YEi-Ft-abX" eventType="touchUpInside" id="bb3-XN-eyG"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Indiana Representative Candidate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOf-19-3Lg">
-                                                <rect key="frame" x="32" y="1206" width="277" height="23"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
-                                                <color key="textColor" red="0.1111473367" green="0.28011122350000001" blue="0.92946511509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rep2" translatesAutoresizingMaskIntoConstraints="NO" id="Wma-4M-cec">
-                                                <rect key="frame" x="32" y="1237" width="311" height="194"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfl-52-PVo">
                                                 <rect key="frame" x="51" y="1160" width="270" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -560,17 +549,10 @@
                                                     <action selector="curIndSen:" destination="YEi-Ft-abX" eventType="touchUpInside" id="LCk-mK-nA7"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PL6-Sk-67K">
-                                                <rect key="frame" x="31" y="1237" width="311" height="194"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <connections>
-                                                    <action selector="repCand:" destination="YEi-Ft-abX" eventType="touchUpInside" id="M4A-6M-924"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1500" id="Y6r-ZI-3UR"/>
+                                            <constraint firstAttribute="height" constant="1250" id="Y6r-ZI-3UR"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -596,14 +578,12 @@
                         <viewLayoutGuide key="safeArea" id="M4G-f9-nAm"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="National" image="natIcon" id="i5Z-Mc-nqv"/>
-                    <size key="freeformSize" width="375" height="1700"/>
+                    <size key="freeformSize" width="375" height="1500"/>
                     <connections>
                         <outlet property="currentIndSenImg" destination="GRj-H4-jQw" id="0ej-Dc-wqh"/>
                         <outlet property="currentIndSenNm" destination="JBW-qd-bO6" id="GdM-KV-R4V"/>
                         <outlet property="currentUsPresImg" destination="mhn-lo-lDb" id="ha0-kb-d1N"/>
                         <outlet property="currentUsPresNm" destination="IAe-DD-vci" id="eV5-GX-ppb"/>
-                        <outlet property="indRepCandImg" destination="Wma-4M-cec" id="7Vc-Kg-jHL"/>
-                        <outlet property="indRepCandNm" destination="Wma-4M-cec" id="XB7-i3-i8D"/>
                         <outlet property="indRepreImg" destination="Wb8-TC-EPy" id="2pN-Gv-ilI"/>
                         <outlet property="indRepreNm" destination="zfl-52-PVo" id="S7s-nC-b2p"/>
                         <outlet property="indSenCandImg" destination="pwj-ph-d2n" id="60w-HM-cnS"/>
@@ -795,7 +775,6 @@
         <image name="natFeed" width="891" height="318"/>
         <image name="natIcon" width="24" height="24"/>
         <image name="rep1" width="5719" height="2930"/>
-        <image name="rep2" width="5760" height="3840"/>
         <image name="signup1" width="1125" height="2436"/>
         <image name="state 2" width="4802" height="3206"/>
         <image name="state 3" width="5933" height="2786"/>

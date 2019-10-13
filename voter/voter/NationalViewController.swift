@@ -38,22 +38,29 @@ class NationalViewController: UIViewController {
         indSenCandImg.clipsToBounds = true
         indRepreImg.layer.cornerRadius = indRepreImg.frame.width/14.0
         indRepreImg.clipsToBounds = true
-        indRepCandImg.layer.cornerRadius = indRepCandImg.frame.width/14.0
-        indRepCandImg.clipsToBounds = true
         
         
-        Database.database().reference().child("Political Database").child("National").child("President of the United States").child("name").observeSingleEvent(of: .value) { (snapshot) in
+        Database.database().reference().child("Political Database").child("National").child("President of the United States").child("0").child("name:").observeSingleEvent(of: .value) { (snapshot) in
             guard let name = snapshot.value as? String else {return}
             self.currentUsPresNm.text = name
         }
         
-        Database.database().reference().child("Political Database").child("National").child("US Senator").child("name").observeSingleEvent(of: .value) { (snapshot) in
+        Database.database().reference().child("Political Database").child("National").child("President of the United States").child("1").child("name:").observeSingleEvent(of: .value) { (snapshot) in
+            guard let name = snapshot.value as? String else {return}
+            self.presCandNm.text = name
+        }
+        
+        Database.database().reference().child("Political Database").child("National").child("US Senator").child("1").child("name").observeSingleEvent(of: .value) { (snapshot) in
             guard let name = snapshot.value as? String else {return}
             self.currentIndSenNm.text = name
         }
         
+        Database.database().reference().child("Political Database").child("National").child("US Senator").child("0").child("name").observeSingleEvent(of: .value) { (snapshot) in
+            guard let name = snapshot.value as? String else {return}
+            self.indSenCandNm.text = name
+        }
         
-        Database.database().reference().child("Political Database").child("National").child("US Representative").child("name").observeSingleEvent(of: .value) { (snapshot) in
+        Database.database().reference().child("Political Database").child("National").child("US Representative").child("0").child("name").observeSingleEvent(of: .value) { (snapshot) in
             guard let name = snapshot.value as? String else {return}
             self.indRepreNm.text = name
         }
@@ -76,12 +83,12 @@ class NationalViewController: UIViewController {
     }
     
     @IBAction func usPresCand(_ sender: Any) {
-        sendData = "President Donald Trump"
+        sendData = "Joseph Biden"
         self.performSegue(withIdentifier: "natToProfile", sender: self)
     }
     
     @IBAction func curIndSen(_ sender: Any) {
-        sendData = "Senator Todd Young"
+        sendData = "Mike Braun"
         self.performSegue(withIdentifier: "natToProfile", sender: self)
     }
     
@@ -91,12 +98,7 @@ class NationalViewController: UIViewController {
     }
     
     @IBAction func currIndRep(_ sender: Any) {
-        sendData = "Representative James R. Baird"
-        self.performSegue(withIdentifier: "natToProfile", sender: self)
-    }
-    
-    @IBAction func repCand(_ sender: Any) {
-        sendData = "Representative James R. Baird"
+        sendData = "Larry Bucshon"
         self.performSegue(withIdentifier: "natToProfile", sender: self)
     }
     
