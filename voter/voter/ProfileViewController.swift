@@ -20,11 +20,22 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var twitterButton: UIButton!
     @IBOutlet weak var bioText: UILabel!
     @IBOutlet weak var partyImage: UIImageView!
+    @IBOutlet weak var newsImage1: UIImageView!
+    @IBOutlet weak var newsLabel1: UILabel!
+    @IBOutlet weak var newsImage2: UIImageView!
+    @IBOutlet weak var newsLabel2: UILabel!
+    
     
     var recivedData: String?
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        newsImage1.layer.cornerRadius = newsImage1.frame.width/14.0
+        newsImage1.clipsToBounds = true
+        newsImage2.layer.cornerRadius = newsImage2.frame.width/14.0
+        newsImage2.clipsToBounds = true
 
         if(recivedData == "President Donald Trump"){
             Database.database().reference().child("Political Database").child("National").child("President of the United States").child("0").child("name:").observeSingleEvent(of: .value) { (snapshot) in

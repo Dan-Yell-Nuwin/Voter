@@ -340,9 +340,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1a-SM-9WQ">
                                 <rect key="frame" x="29" y="557" width="314" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="zJv-o8-hxG" kind="show" id="FBp-S2-PnA"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="zKe-na-acG">
                                 <rect key="frame" x="67" y="333" width="240" height="146"/>
@@ -356,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtP-E5-dNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6202" y="910"/>
+            <point key="canvasLocation" x="5471" y="1158"/>
         </scene>
         <!--Local-->
         <scene sceneID="Jmt-sT-otT">
@@ -642,7 +639,7 @@
             <objects>
                 <viewController id="omQ-nE-PpW" customClass="ProfileViewController" customModule="voter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RMq-YP-EFm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1L-yE-InI">
@@ -677,10 +674,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPf-e4-KoU">
-                                <rect key="frame" x="0.0" y="332" width="375" height="868"/>
+                                <rect key="frame" x="0.0" y="332" width="375" height="1268"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kge-nO-7fe">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Feed-Background" translatesAutoresizingMaskIntoConstraints="NO" id="QUt-Xm-2aa">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="482"/>
@@ -740,10 +737,39 @@
                                                     <action selector="tappedParty:" destination="omQ-nE-PpW" eventType="touchUpInside" id="pWr-BX-LQ7"/>
                                                 </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Feq-YF-sLp">
+                                                <rect key="frame" x="31" y="523" width="313" height="177"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latest News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pt3-bg-xsR">
+                                                <rect key="frame" x="124" y="485" width="128" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cd9-N3-NFN">
+                                                <rect key="frame" x="31" y="708" width="313" height="134"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KY1-UX-7lh">
+                                                <rect key="frame" x="32" y="881" width="313" height="177"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbo-Oe-o2M">
+                                                <rect key="frame" x="32" y="1066" width="313" height="134"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="epV-cR-dtJ"/>
+                                            <constraint firstAttribute="height" constant="1500" id="epV-cR-dtJ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -777,12 +803,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dyg-Y9-mOO"/>
                     </view>
-                    <size key="freeformSize" width="375" height="1200"/>
+                    <size key="freeformSize" width="375" height="1600"/>
                     <connections>
                         <outlet property="bioText" destination="2m3-Ky-o0X" id="sod-I6-uqD"/>
                         <outlet property="facebookButton" destination="UIo-bl-pPq" id="XKS-Oc-RkI"/>
                         <outlet property="headerImage" destination="h4P-3d-dju" id="dZW-TR-fyn"/>
                         <outlet property="nameLabel" destination="Tox-xL-1Lp" id="r8k-HW-owe"/>
+                        <outlet property="newsImage1" destination="Feq-YF-sLp" id="q69-pN-78G"/>
+                        <outlet property="newsImage2" destination="KY1-UX-7lh" id="AUq-Nh-hHD"/>
+                        <outlet property="newsLabel1" destination="Cd9-N3-NFN" id="hps-Mw-r0g"/>
+                        <outlet property="newsLabel2" destination="Hbo-Oe-o2M" id="K5Q-DV-7vj"/>
                         <outlet property="partyImage" destination="4Di-AI-Bzs" id="vg6-be-Rm1"/>
                         <outlet property="positionLabel" destination="Pqo-UG-W7V" id="tMm-6j-IEO"/>
                         <segue destination="QV2-39-KqV" kind="show" identifier="profileToHome" id="Gor-Sq-W5o"/>
@@ -814,7 +844,7 @@
                                     <navigationItem title="Voter Registration" id="CUC-0E-qfL">
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="5c6-ym-Jdq">
                                             <connections>
-                                                <segue destination="u4N-Cj-wio" kind="show" id="UDC-FV-pbf"/>
+                                                <segue destination="QV2-39-KqV" kind="show" id="e5V-t5-33e"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -894,8 +924,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Gor-Sq-W5o"/>
-        <segue reference="bq6-Th-kNi"/>
-        <segue reference="xjA-f0-uav"/>
+        <segue reference="vfi-dX-b5G"/>
         <segue reference="nel-Gi-9dN"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.097473897039999993" green="0.23821163179999999" blue="0.74514085050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
