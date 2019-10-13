@@ -69,7 +69,7 @@ class StateViewController: UIViewController {
     }
     
     @IBAction func curIndRep(_ sender: Any) {
-        sendData = "Chris Campbell"
+        sendData = "Ronald Bacon"
         self.performSegue(withIdentifier: "stateToProfile", sender: self)
     }
     

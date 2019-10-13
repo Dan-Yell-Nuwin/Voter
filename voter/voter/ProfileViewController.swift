@@ -150,6 +150,24 @@ class ProfileViewController: UIViewController {
                 self.nameLabel.text = name
                 self.positionLabel.text = "Indiana State Representative"
             }
+        }else if (recivedData == "Ronald Bacon"){
+            Database.database().reference().child("Political Database").child("State").child("IN State Representative").child("name").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.nameLabel.text = name
+                self.positionLabel.text = "Governor of Indiana Candidate"
+                
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("IN State Representative").child("photo").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.headerImage.kf.setImage(with: url)
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("IN State Representative").child("bio").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.bioText.text = name
+            }
         }
     }
     
@@ -162,10 +180,27 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func facebookTapped(_ sender: Any) {
-        if (recivedData == "John R Dennis"){
-
+        if (recivedData == "Eric Holcomb"){
+             Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("0").child("channels").child("0").child("id").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                guard let url = URL(string: "https://facebook.com/\(name)") else { return }
+                UIApplication.shared.open(url)
+            }
+        } else if(recivedData == "Eddie Melton"){
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("1").child("channels").child("1").child("id").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                guard let url = URL(string: "https://facebook.com/\(name)") else { return }
+                UIApplication.shared.open(url)
+            }
+        } else if (recivedData == "Ronald Bacon"){
+            Database.database().reference().child("Political Database").child("State").child("IN State Representative").child("channels").child("1").child("id").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                guard let url = URL(string: "https://facebook.com/\(name)") else { return }
+                UIApplication.shared.open(url)
+            }
         }
     }
+        
     
     @IBAction func twitterTapped(_ sender: Any) {
         if(recivedData == "Zachary Baiel"){
@@ -175,7 +210,26 @@ class ProfileViewController: UIViewController {
                 UIApplication.shared.open(url)
             }
             
+        } else if (recivedData == "Eric Holcomb"){
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("0").child("channels").child("1").child("id").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                guard let url = URL(string: "https://twitter.com/\(name)") else { return }
+                UIApplication.shared.open(url)
+            }
+        } else if(recivedData == "Eddie Melton"){
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("1").child("channels").child("0").child("id").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                guard let url = URL(string: "https://twitter.com/\(name)") else { return }
+                UIApplication.shared.open(url)
+            }
+        } else if (recivedData == "Ronald Bacon"){
+            Database.database().reference().child("Political Database").child("State").child("IN State Representative").child("channels").child("0").child("id").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                guard let url = URL(string: "https://twitter.com/\(name)") else { return }
+                UIApplication.shared.open(url)
+            }
         }
+
     }
     
 }
