@@ -98,7 +98,7 @@ class NationalViewController: UIViewController {
     }
     
     @IBAction func currIndRep(_ sender: Any) {
-        sendData = "Larry Bucshon"
+        sendData = "Larry"
         self.performSegue(withIdentifier: "natToProfile", sender: self)
     }
     

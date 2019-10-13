@@ -737,6 +737,49 @@
             </objects>
             <point key="canvasLocation" x="5888.8000000000002" y="-28.078817733990149"/>
         </scene>
+        <!--Register Vote View Controller-->
+        <scene sceneID="4hL-Ix-Hb8">
+            <objects>
+                <viewController id="zJv-o8-hxG" customClass="RegisterVoteViewController" customModule="voter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Th-dB-Qrf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c91-v4-tpw">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSm-4z-N13">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="CUC-0E-qfL"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="c91-v4-tpw" secondAttribute="bottom" id="EuS-sH-2pG"/>
+                            <constraint firstItem="mSm-4z-N13" firstAttribute="trailing" secondItem="c91-v4-tpw" secondAttribute="trailing" id="MiT-Ya-9qO"/>
+                            <constraint firstItem="c91-v4-tpw" firstAttribute="top" secondItem="mSm-4z-N13" secondAttribute="bottom" id="SlT-pL-G7G"/>
+                            <constraint firstItem="mSm-4z-N13" firstAttribute="top" secondItem="PvO-qa-hYT" secondAttribute="top" id="Wze-UX-Irg"/>
+                            <constraint firstItem="c91-v4-tpw" firstAttribute="leading" secondItem="PvO-qa-hYT" secondAttribute="leading" id="a82-6V-dPD"/>
+                            <constraint firstItem="mSm-4z-N13" firstAttribute="leading" secondItem="c91-v4-tpw" secondAttribute="leading" id="lqf-xM-gKc"/>
+                            <constraint firstItem="c91-v4-tpw" firstAttribute="trailing" secondItem="PvO-qa-hYT" secondAttribute="trailing" id="uXc-Fb-Zp3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PvO-qa-hYT"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="c91-v4-tpw" id="xVu-QJ-swM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eui-VS-BFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6932" y="18.472906403940886"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Qry-lu-xQS">
             <objects>

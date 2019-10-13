@@ -60,6 +60,7 @@
 		97CF8B0D23524A5800537D58 /* StateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CF8B0C23524A5800537D58 /* StateViewController.swift */; };
 		97CF8B0F23524B4F00537D58 /* LocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CF8B0E23524B4F00537D58 /* LocalViewController.swift */; };
 		97CF8B112352992800537D58 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CF8B102352992800537D58 /* ProfileViewController.swift */; };
+		97CF8B132353066600537D58 /* RegisterVoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CF8B122353066600537D58 /* RegisterVoteViewController.swift */; };
 		B48F4E20B8A6F3FBD9449FE3 /* Pods_voter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB50314B735508F3E954EDF /* Pods_voter.framework */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +146,7 @@
 		97CF8B0C23524A5800537D58 /* StateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewController.swift; sourceTree = "<group>"; };
 		97CF8B0E23524B4F00537D58 /* LocalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalViewController.swift; sourceTree = "<group>"; };
 		97CF8B102352992800537D58 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		97CF8B122353066600537D58 /* RegisterVoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVoteViewController.swift; sourceTree = "<group>"; };
 		BC799A624EC4580700353DE7 /* Pods-voter-voterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voter-voterUITests.debug.xcconfig"; path = "Target Support Files/Pods-voter-voterUITests/Pods-voter-voterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF3FD5C658B2D6562A65D985 /* Pods-voter-voterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voter-voterUITests.release.xcconfig"; path = "Target Support Files/Pods-voter-voterUITests/Pods-voter-voterUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -220,6 +222,7 @@
 				977FBD342351C3CA00190CC4 /* AppDelegate.swift */,
 				977FBD362351C3CA00190CC4 /* ViewController.swift */,
 				977FBD382351C3CA00190CC4 /* Main.storyboard */,
+				97CF8B122353066600537D58 /* RegisterVoteViewController.swift */,
 				97CF8B102352992800537D58 /* ProfileViewController.swift */,
 				97CF8AC12352422300537D58 /* NationalViewController.swift */,
 				97CF8B0C23524A5800537D58 /* StateViewController.swift */,
@@ -589,6 +592,7 @@
 				97CF8AC22352422300537D58 /* NationalViewController.swift in Sources */,
 				97CF8B112352992800537D58 /* ProfileViewController.swift in Sources */,
 				97CF8B0F23524B4F00537D58 /* LocalViewController.swift in Sources */,
+				97CF8B132353066600537D58 /* RegisterVoteViewController.swift in Sources */,
 				9724DE332351ED0F00921865 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
