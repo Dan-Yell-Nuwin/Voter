@@ -19,6 +19,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var facebookButton: UIButton!
     @IBOutlet weak var twitterButton: UIButton!
     @IBOutlet weak var bioText: UILabel!
+    @IBOutlet weak var partyImage: UIImageView!
     
     var recivedData: String?
     
@@ -371,4 +372,124 @@ class ProfileViewController: UIViewController {
 
     }
     
+    @IBAction func tappedParty(_ sender: Any) {
+        if(recivedData == "John R Dennis"){
+            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("1").child("party").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                if(name == "Independent"){
+                    self.partyImage.image = UIImage(named: "independent")
+                }else if(name == "Republican"){
+                    self.partyImage.image = UIImage(named: "republican")
+                }else if(name == "Democratic"){
+                    self.partyImage.image = UIImage(named: "democrat")
+                }
+            }
+
+        }else if(recivedData == "Zachary Baiel"){
+            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("0").child("party").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                if(name == "Independent"){
+                    self.partyImage.image = UIImage(named: "independent")
+                }else if(name == "Republican"){
+                    self.partyImage.image = UIImage(named: "republican")
+                }else if(name == "Democratic" || name == "Democrat Party"){
+                    self.partyImage.image = UIImage(named: "democrat")
+                }
+            }
+        }else if(recivedData == "Eric Holcomb"){
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("0").child("party").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                if(name == "Independent"){
+                    self.partyImage.image = UIImage(named: "independent")
+                }else if(name == "Republican" || name == "Republican Party"){
+                    self.partyImage.image = UIImage(named: "republican")
+                }else if(name == "Democratic" || name == "Democrat Party"){
+                    self.partyImage.image = UIImage(named: "democrat")
+                }
+            }
+        }else if(recivedData == "Eddie Melton"){
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("1").child("party").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                if(name == "Independent"){
+                    self.partyImage.image = UIImage(named: "independent")
+                }else if(name == "Republican" || name == "Republican Party"){
+                    self.partyImage.image = UIImage(named: "republican")
+                }else if(name == "Democratic" || name == "Democrat Party"){
+                    self.partyImage.image = UIImage(named: "democrat")
+                }
+            }
+ 
+        }else if(recivedData == "Ronald Bacon"){
+            Database.database().reference().child("Political Database").child("State").child("IN State Representative").child("name").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                if(name == "Independent"){
+                    self.partyImage.image = UIImage(named: "independent")
+                }else if(name == "Republican" || name == "Republican Party"){
+                    self.partyImage.image = UIImage(named: "republican")
+                }else if(name == "Democratic" || name == "Democrat Party"){
+                    self.partyImage.image = UIImage(named: "democrat")
+                }
+            }
+        }else if(recivedData == "President Donald Trump"){
+            Database.database().reference().child("Political Database").child("National").child("President of the United States").child("0").child("party:").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                if(name == "Independent"){
+                    self.partyImage.image = UIImage(named: "independent")
+                }else if(name == "Republican" || name == "Republican Party"){
+                    self.partyImage.image = UIImage(named: "republican")
+                }else if(name == "Democratic" || name == "Democrat Party"){
+                    self.partyImage.image = UIImage(named: "democrat")
+                }
+            }
+        }else if(recivedData == "Joseph Biden"){
+            Database.database().reference().child("Political Database").child("National").child("President of the United States").child("1").child("party:").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                if(name == "Independent"){
+                    self.partyImage.image = UIImage(named: "independent")
+                }else if(name == "Republican" || name == "Republican Party"){
+                    self.partyImage.image = UIImage(named: "republican")
+                }else if(name == "Democratic" || name == "Democrat Party" || name == "Democratic Party"){
+                    self.partyImage.image = UIImage(named: "democrat")
+                }
+            }
+        }else if(recivedData == "Mike Braun"){
+            Database.database().reference().child("Political Database").child("National").child("US Senator").child("1").child("party").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                if(name == "Independent"){
+                    self.partyImage.image = UIImage(named: "independent")
+                }else if(name == "Republican" || name == "Republican Party"){
+                    self.partyImage.image = UIImage(named: "republican")
+                }else if(name == "Democratic" || name == "Democrat Party" || name == "Democratic Party"){
+                    self.partyImage.image = UIImage(named: "democrat")
+                }
+            }
+        }else if(recivedData == "Senator Todd Young"){
+            Database.database().reference().child("Political Database").child("National").child("US Senator").child("0").child("party").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+            if(name == "Independent"){
+                self.partyImage.image = UIImage(named: "independent")
+            }else if(name == "Republican" || name == "Republican Party"){
+                self.partyImage.image = UIImage(named: "republican")
+            }else if(name == "Democratic" || name == "Democrat Party" || name == "Democratic Party"){
+                self.partyImage.image = UIImage(named: "democrat")
+            }
+        }
+
+        }else if(recivedData == "Larry"){
+            Database.database().reference().child("Political Database").child("National").child("US Representative").child("0").child("party").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                if(name == "Independent"){
+                    self.partyImage.image = UIImage(named: "independent")
+                }else if(name == "Republican" || name == "Republican Party"){
+                    self.partyImage.image = UIImage(named: "republican")
+                }else if(name == "Democratic" || name == "Democrat Party" || name == "Democratic Party"){
+                    self.partyImage.image = UIImage(named: "democrat")
+                }
+            }
+        }
+    }
+    
+    
 }
+
+

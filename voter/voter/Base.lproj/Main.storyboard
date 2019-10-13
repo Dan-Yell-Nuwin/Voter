@@ -318,7 +318,7 @@
             </objects>
             <point key="canvasLocation" x="3968.8000000000002" y="805.41871921182269"/>
         </scene>
-        <!--Item-->
+        <!--Vote-->
         <scene sceneID="yl9-20-IW4">
             <objects>
                 <viewController id="u4N-Cj-wio" sceneMemberID="viewController">
@@ -326,8 +326,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Next Election is in November 2019" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uip-3z-Hkc">
-                                <rect key="frame" x="29" y="73" width="284" height="111"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Next election for you is in November 2019!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uip-3z-Hkc">
+                                <rect key="frame" x="29" y="73" width="314" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="32"/>
                                 <color key="textColor" red="0.2986021042" green="0.29248470069999999" blue="0.36079299450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -344,15 +344,19 @@
                                     <segue destination="zJv-o8-hxG" kind="show" id="FBp-S2-PnA"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="zKe-na-acG">
+                                <rect key="frame" x="67" y="333" width="240" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tAv-f4-SNb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="n6a-oN-SxJ"/>
+                    <tabBarItem key="tabBarItem" title="Vote" image="Icon-Download" id="n6a-oN-SxJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtP-E5-dNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6174" y="805"/>
+            <point key="canvasLocation" x="6202" y="910"/>
         </scene>
         <!--Local-->
         <scene sceneID="Jmt-sT-otT">
@@ -420,7 +424,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="e0I-zt-FBU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Local" image="Icon-Map-Pin" id="Whr-6X-H11"/>
+                    <tabBarItem key="tabBarItem" title="Local" image="Icon-Map-Pin" id="Whr-6X-H11" colorLabel="IBBuiltInLabel-Blue"/>
                     <connections>
                         <outlet property="canMayorImg" destination="Rlh-Nn-HLH" id="LCN-m2-qKw"/>
                         <outlet property="canMayorm" destination="9q4-mM-5Bx" id="SiA-BJ-MS8"/>
@@ -682,10 +686,6 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="482"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Feed-Background" translatesAutoresizingMaskIntoConstraints="NO" id="DlC-h3-cbZ">
-                                                <rect key="frame" x="0.0" y="386" width="375" height="482"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnp-fS-gV5">
                                                 <rect key="frame" x="22" y="91" width="106" height="28"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -720,6 +720,24 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="twitterTapped:" destination="omQ-nE-PpW" eventType="touchUpInside" id="vGk-wo-Mbw"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhA-is-MIW">
+                                                <rect key="frame" x="22" y="399" width="0.0" height="0.0"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Button-Signup" translatesAutoresizingMaskIntoConstraints="NO" id="4Di-AI-Bzs">
+                                                <rect key="frame" x="31" y="399" width="313" height="83"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pv1-x5-QcK">
+                                                <rect key="frame" x="31" y="417" width="313" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="tappedParty:" destination="omQ-nE-PpW" eventType="touchUpInside" id="pWr-BX-LQ7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -765,6 +783,7 @@
                         <outlet property="facebookButton" destination="UIo-bl-pPq" id="XKS-Oc-RkI"/>
                         <outlet property="headerImage" destination="h4P-3d-dju" id="dZW-TR-fyn"/>
                         <outlet property="nameLabel" destination="Tox-xL-1Lp" id="r8k-HW-owe"/>
+                        <outlet property="partyImage" destination="4Di-AI-Bzs" id="vg6-be-Rm1"/>
                         <outlet property="positionLabel" destination="Pqo-UG-W7V" id="tMm-6j-IEO"/>
                         <segue destination="QV2-39-KqV" kind="show" identifier="profileToHome" id="Gor-Sq-W5o"/>
                     </connections>
@@ -846,8 +865,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Button-Signup" width="933" height="168"/>
         <image name="Buttons" width="933" height="399"/>
         <image name="Feed-Background" width="1125" height="1440"/>
+        <image name="Icon-Download" width="24" height="24"/>
         <image name="Icon-Map-Pin" width="24" height="24"/>
         <image name="dc" width="5168" height="3448"/>
         <image name="dc2" width="4145" height="2753"/>
@@ -872,9 +893,9 @@
         <image name="whiteHouse" width="4928" height="3209"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sLW-05-MnZ"/>
-        <segue reference="CiH-kG-2Mh"/>
-        <segue reference="UDC-FV-pbf"/>
+        <segue reference="Gor-Sq-W5o"/>
+        <segue reference="bq6-Th-kNi"/>
+        <segue reference="xjA-f0-uav"/>
         <segue reference="nel-Gi-9dN"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.097473897039999993" green="0.23821163179999999" blue="0.74514085050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
