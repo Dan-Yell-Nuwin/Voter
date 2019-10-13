@@ -44,6 +44,28 @@ class ProfileViewController: UIViewController {
                 self.positionLabel.text = "President of the United States"
             }
             
+            Database.database().reference().child("Political Database").child("National").child("President of the United States").child("0").child("articles").child("0").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel1.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("President of the United States").child("0").child("articles").child("0").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage1.kf.setImage(with: url)
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("President of the United States").child("0").child("articles").child("1").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel2.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("President of the United States").child("0").child("articles").child("1").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage2.kf.setImage(with: url)
+            }
+            
             Database.database().reference().child("Political Database").child("National").child("President of the United States").child("0").child("photo:").observeSingleEvent(of: .value) { (snapshot) in
                 guard let photoUrl = snapshot.value as? String else {return}
                 let url = URL(string: photoUrl)
@@ -62,6 +84,31 @@ class ProfileViewController: UIViewController {
                 self.nameLabel.text = name
                 self.positionLabel.text = "President of the United States Candidate"
             }
+            
+            
+            Database.database().reference().child("Political Database").child("National").child("President of the United States").child("1").child("articles").child("0").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel1.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("President of the United States").child("1").child("articles").child("0").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage1.kf.setImage(with: url)
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("President of the United States").child("1").child("articles").child("1").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel2.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("President of the United States").child("1").child("articles").child("1").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage2.kf.setImage(with: url)
+            }
+            
+            
             
             Database.database().reference().child("Political Database").child("National").child("President of the United States").child("1").child("photo:").observeSingleEvent(of: .value) { (snapshot) in
                 guard let photoUrl = snapshot.value as? String else {return}
@@ -82,6 +129,29 @@ class ProfileViewController: UIViewController {
                 self.positionLabel.text = "US Senator"
             }
             
+            
+            Database.database().reference().child("Political Database").child("National").child("US Senator").child("1").child("articles").child("0").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel1.text = name
+            }
+            
+             Database.database().reference().child("Political Database").child("National").child("US Senator").child("1").child("articles").child("0").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage1.kf.setImage(with: url)
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("US Senator").child("1").child("articles").child("1").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel2.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("US Senator").child("1").child("articles").child("1").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage2.kf.setImage(with: url)
+            }
+            
             Database.database().reference().child("Political Database").child("National").child("US Senator").child("1").child("photo").observeSingleEvent(of: .value) { (snapshot) in
                 guard let photoUrl = snapshot.value as? String else {return}
                 let url = URL(string: photoUrl)
@@ -98,7 +168,7 @@ class ProfileViewController: UIViewController {
             Database.database().reference().child("Political Database").child("National").child("US Senator").child("0").child("name").observeSingleEvent(of: .value) { (snapshot) in
                 guard let name = snapshot.value as? String else {return}
                 self.nameLabel.text = name
-                self.positionLabel.text = "US Senator Candidate"
+                self.positionLabel.text = "US Senator"
 
             }
             
@@ -107,25 +177,40 @@ class ProfileViewController: UIViewController {
                 let url = URL(string: photoUrl)
                 self.headerImage.kf.setImage(with: url)
             }
+            ///
+            Database.database().reference().child("Political Database").child("National").child("US Senator").child("0").child("articles").child("0").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel1.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("US Senator").child("0").child("articles").child("0").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage1.kf.setImage(with: url)
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("US Senator").child("0").child("articles").child("1").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel2.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("US Senator").child("0").child("articles").child("1").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage2.kf.setImage(with: url)
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("US Senator").child("0").child("photo").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.headerImage.kf.setImage(with: url)
+            }///
             
             Database.database().reference().child("Political Database").child("National").child("US Senator").child("0").child("bio").observeSingleEvent(of: .value) { (snapshot) in
                 guard let name = snapshot.value as? String else {return}
                 self.bioText.text = name
             }
             
-        }else if (recivedData == "Representative James R. Baird"){
-            Database.database().reference().child("Political Database").child("National").child("US Representative").child("name").observeSingleEvent(of: .value) { (snapshot) in
-                guard let name = snapshot.value as? String else {return}
-                self.nameLabel.text = name
-                self.positionLabel.text = "US Representative Indiana"
-                
-            }
-            
-            Database.database().reference().child("Political Database").child("National").child("US Representative").child("photo").observeSingleEvent(of: .value) { (snapshot) in
-                guard let photoUrl = snapshot.value as? String else {return}
-                let url = URL(string: photoUrl)
-                self.headerImage.kf.setImage(with: url)
-            }
             
         }else if(recivedData == "John R Dennis"){
             Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("1").child("name").observeSingleEvent(of: .value) { (snapshot) in
@@ -133,11 +218,44 @@ class ProfileViewController: UIViewController {
                 self.nameLabel.text = name
                 self.positionLabel.text = "Mayor of West Lafayette"
                 
+                
+                
                 Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("1").child("bio").observeSingleEvent(of: .value) { (snapshot) in
                     guard let name = snapshot.value as? String else {return}
                     self.bioText.text = name
                 }
-
+////
+                
+                
+                Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("1").child("articles").child("0").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                    guard let name = snapshot.value as? String else {return}
+                    self.newsLabel1.text = name
+                }
+                
+                Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("1").child("articles").child("0").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                    guard let photoUrl = snapshot.value as? String else {return}
+                    let url = URL(string: photoUrl)
+                    self.newsImage1.kf.setImage(with: url)
+                }
+                
+                Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("1").child("articles").child("1").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                    guard let name = snapshot.value as? String else {return}
+                    self.newsLabel2.text = name
+                }
+                
+                Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("1").child("articles").child("1").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                    guard let photoUrl = snapshot.value as? String else {return}
+                    let url = URL(string: photoUrl)
+                    self.newsImage2.kf.setImage(with: url)
+                }
+                
+                Database.database().reference().child("Political Database").child("National").child("US Senator").child("0").child("photo").observeSingleEvent(of: .value) { (snapshot) in
+                    guard let photoUrl = snapshot.value as? String else {return}
+                    let url = URL(string: photoUrl)
+                    self.headerImage.kf.setImage(with: url)
+                }
+                
+                /////
                 
                 Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("1").child("photo").observeSingleEvent(of: .value) { (snapshot) in
                     guard let photoUrl = snapshot.value as? String else {return}
@@ -166,6 +284,32 @@ class ProfileViewController: UIViewController {
                 self.headerImage.kf.setImage(with: url)
             }
             
+            
+            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("0").child("articles").child("0").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel1.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("0").child("articles").child("0").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage1.kf.setImage(with: url)
+            }
+            
+            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("0").child("articles").child("1").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel2.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("Local").child("Mayor of West Lafayette").child("0").child("articles").child("1").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage2.kf.setImage(with: url)
+            }
+            
+        
+        
+            
         }else if (recivedData == "Eric Holcomb"){
             Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("0").child("name").observeSingleEvent(of: .value) { (snapshot) in
                 guard let name = snapshot.value as? String else {return}
@@ -185,6 +329,29 @@ class ProfileViewController: UIViewController {
                 self.bioText.text = name
             }
             
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("0").child("articles").child("0").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel1.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("0").child("articles").child("0").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage1.kf.setImage(with: url)
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("0").child("articles").child("1").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel2.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("0").child("articles").child("1").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage2.kf.setImage(with: url)
+            }
+            
+            
         }else if (recivedData == "Eddie Melton"){
             
             Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("1").child("name").observeSingleEvent(of: .value) { (snapshot) in
@@ -203,6 +370,28 @@ class ProfileViewController: UIViewController {
             Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("1").child("bio").observeSingleEvent(of: .value) { (snapshot) in
                 guard let name = snapshot.value as? String else {return}
                 self.bioText.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("1").child("articles").child("0").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel1.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("1").child("articles").child("0").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage1.kf.setImage(with: url)
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("1").child("articles").child("1").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel2.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("Governor of Indiana").child("1").child("articles").child("1").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage2.kf.setImage(with: url)
             }
             
         }else if (recivedData == "Chris Campbell"){
@@ -229,11 +418,34 @@ class ProfileViewController: UIViewController {
                 guard let name = snapshot.value as? String else {return}
                 self.bioText.text = name
             }
+            
+            Database.database().reference().child("Political Database").child("State").child("IN State Representative").child("articles").child("0").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel1.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("IN State Representative").child("articles").child("0").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage1.kf.setImage(with: url)
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("IN State Representative").child("articles").child("1").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel2.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("State").child("IN State Representative").child("articles").child("1").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage2.kf.setImage(with: url)
+            }
+            
         }else if (recivedData == "Larry"){
             Database.database().reference().child("Political Database").child("National").child("US Representative").child("0").child("name").observeSingleEvent(of: .value) { (snapshot) in
                 guard let name = snapshot.value as? String else {return}
                 self.nameLabel.text = name
-                self.positionLabel.text = "Indiana State Representative"
+                self.positionLabel.text = "District Representative"
                 
             }
             
@@ -247,6 +459,29 @@ class ProfileViewController: UIViewController {
                 guard let name = snapshot.value as? String else {return}
                 self.bioText.text = name
             }
+            
+            Database.database().reference().child("Political Database").child("National").child("US Representative").child("0").child("articles").child("0").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel1.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("US Representative").child("0").child("articles").child("0").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage1.kf.setImage(with: url)
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("US Representative").child("0").child("articles").child("1").child("summary").observeSingleEvent(of: .value) { (snapshot) in
+                guard let name = snapshot.value as? String else {return}
+                self.newsLabel2.text = name
+            }
+            
+            Database.database().reference().child("Political Database").child("National").child("US Representative").child("0").child("articles").child("1").child("img").observeSingleEvent(of: .value) { (snapshot) in
+                guard let photoUrl = snapshot.value as? String else {return}
+                let url = URL(string: photoUrl)
+                self.newsImage2.kf.setImage(with: url)
+            }
+            
         }
     }
     
