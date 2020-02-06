@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:lol.gpx">
+   </FileRef>
+   <FileRef
+      location = "group:default.gpx">
+   </FileRef>
+   <FileRef
       location = "group:voter.xcodeproj">
    </FileRef>
    <FileRef
